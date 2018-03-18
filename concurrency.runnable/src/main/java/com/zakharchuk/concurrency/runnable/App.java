@@ -1,14 +1,9 @@
 package com.zakharchuk.concurrency.runnable;
 
 import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
 	public static final Logger logger = LogManager.getLogger();
@@ -37,5 +32,6 @@ public class App
 		
 		Thread additionalThread = new Thread(runnable);
 		additionalThread.start();
+		System.out.println("Done!");
     }
 }
